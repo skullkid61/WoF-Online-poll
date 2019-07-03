@@ -1,0 +1,46 @@
+/*=========================//
+//==== Main styles ========//
+//=========================*/
+
+/*==== Layout styles =====*/
+
+body {
+	background-color: #f2f3f3;
+	color: gray;
+}
+
+.container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+/*=== Card styles =======*/
+
+#nominees {
+  display: flex;
+	flex-direction: row;
+}
+
+.nominee-card {
+	padding: 2em;
+	max-width: 50%;
+	/* border: 1px black solid; */
+}
+
+.nominee-card > * {
+  pointer-events: none;
+}
+
+.nominee-image {
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+input[type=radio] {
+	
+}
