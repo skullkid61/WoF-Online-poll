@@ -7,6 +7,9 @@ nominees.addEventListener('click', e => {
 		if (e.target === card[i]) {
 			console.log('This click works for nominee ' + (i+1));
 			hiddenRadio[i].click();
+			e.target.classList.add('border-focus');
+		} else {
+			card[i].classList.remove('border-focus');
 		}
 	}
 });
