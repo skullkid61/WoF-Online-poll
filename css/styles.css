@@ -18,12 +18,21 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /* === Header styles ======= */
 
+header {
+  margin: 0 auto;
+}
+
 h1 {
 	text-align: center;
+}
+
+.advertiser-logo {
+  max-width: 300px;
 }
 
 /*=== Card styles =======*/
@@ -39,7 +48,7 @@ h1 {
 .nominee-card {
 	padding: 1em;
   max-width: 100%;
-  transition: .4s;
+  transition: .3s;
   opacity: .9;
   border-radius: 5px;
   /* border: solid red 1px; */
@@ -52,7 +61,7 @@ h1 {
 .nominee-image {
 	max-width: 100%;
   border-radius: 50%;
-  transition: .4s;
+  transition: .3s;
 }
 
 .nominee-card h2,
@@ -69,13 +78,13 @@ h1 {
 }
 
 .border-focus {
-  transform: scale(1.05);
-  transition: .6s;
+  transition: .4s;
   opacity: 1;
 }
 
 .border-focus img {
-  transition: .6s;
+  transform: scale(1.03);
+  transition: .4s;
   -webkit-box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.3);
@@ -93,11 +102,22 @@ input[type=submit] {
   color: white;
   padding: .6em;
   border-radius: 4px;
-  transition: 1s;
+  transition: .4s;
+  opacity: 0.95;
+}
+
+.hidden-button {
+  opacity: 0 !important;
+  transition: .2s;
+  pointer-events: none;
 }
 
 input[type=submit]:hover {
   opacity: 1;
+  transition: .4s;
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,0.2), 
+              0 8px 10px 1px rgba(0,0,0,0.14), 
+              0 3px 14px 2px rgba(0,0,0,0.12);
 }
 
 @media screen and (min-width: 450px) {
