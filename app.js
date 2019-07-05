@@ -17,11 +17,9 @@ document.addEventListener('click', (e) => {
       hiddenRadio[i].checked = false;
       console.log('else being activated for item ' + (i + 1));
       count ++;
-      if (count > 5) {
-        // submit.style.display = 'none';
+      if (count > card.length - 1) {
         submit.classList.add('hidden-button');
       } else {
-        // submit.style.display = 'block';
         submit.classList.remove('hidden-button');
       }
 		}
