@@ -28,8 +28,8 @@ img {
 
 /* === Header styles ======= */
 
-.welcome-display {
-  /* display: none; */
+.welcome-display,
+.goodbye-display {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -44,9 +44,12 @@ img {
   height: 100%;
   overflow: auto;
   background-color: #1a1a1a;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
-.welcome-display h1 {
+.welcome-display h1,
+.goodbye-display h1 {
   margin-top: 1em;
   color: #d6c184;
   line-height: 1.1;
@@ -75,6 +78,22 @@ img {
     opacity: 1;
   }
 }
+@keyframes button-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes button-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 .welcome-display button {
   -webkit-animation: button-glow 2s ease-in-out infinite both;
@@ -93,7 +112,8 @@ img {
 }
 
 .hide-display button {
-  visibility: hidden;
+  -webkit-animation: button-fade .4s;
+          animation: button-fade .4s;
 }
 
 header {
@@ -142,7 +162,6 @@ h3 {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 3em;
-  /* border: solid red 1px; */
 }
 
 .nominee-card {
@@ -152,7 +171,6 @@ h3 {
   opacity: .9;
   border-radius: 5px;
   position: relative;
-  /* border: solid red 1px; */
 }
 
 .nominee-card img,
@@ -219,7 +237,7 @@ h3 {
 }
 
 input[type=radio] {
-	display: none;
+	/* display: none; */
 }
 
 input[type=submit],

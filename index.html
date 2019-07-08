@@ -5,7 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Walk of Fame</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="msapplication-navbutton-color" content="#1a1a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
     <link rel="stylesheet" href="font/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/styles.css">
@@ -16,6 +22,10 @@
       <h1>Vote for your 2018 Walk of Fame People's Choice Star</h1>
       <button class="start-button">Start</button>
     </div>
+    <div class="goodbye-display hide-display">
+        <img src="images/AFC-WoF-Title-Graphic.svg" alt="Walk of Fame Logo">
+        <h1>Thank you for your vote!</h1>
+      </div>
 		<div class="container">
 			<header>
         <img class="main-logo" src="images/AFC-WoF-Title-Graphic-white.svg" alt="Walk of Fame Logo">
@@ -25,7 +35,7 @@
         </div>
       </header>
       
-			<form method="post">
+			<form id="form" method="post">
 				<h1>Select your 2018 Walk of Fame People's Choice Star</h1>
 				<div id="nominees">
 
