@@ -61,6 +61,16 @@ img {
   z-index: -3;
 }
 
+.goodbye-display img {
+  opacity: .7;
+}
+
+.expand {
+  opacity: 1 !important;
+  transform: scale(1.18);
+  transition: 10s ease-out;
+}
+
 @-webkit-keyframes button-glow {
   0% {
     opacity: 1;
@@ -273,7 +283,7 @@ input[type=submit],
     font-size: 40px;
   }
   .goodbye-display img {
-    opacity: .6;
+    opacity: .7;
   }
   .expand {
     opacity: 1 !important;
