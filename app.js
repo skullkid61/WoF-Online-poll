@@ -7,6 +7,8 @@ const goodbyeLogo = document.querySelector('.goodbye-display img');
 const startButton = document.getElementsByClassName('start-button')[0];
 const form = document.getElementById('form');
 const container = document.getElementsByClassName('container')[0];
+const nomineeName = document.querySelectorAll('.card-text h2');
+const thankYou = document.querySelectorAll('.goodbye-display h1')[0];
 
 document.addEventListener('click', (e) => {
 	for (i = 0; i < card.length; i++) {
@@ -14,6 +16,7 @@ document.addEventListener('click', (e) => {
 			hiddenRadio[i].checked = true;
       e.target.classList.add('border-focus');
       voteButton[i].classList.remove('hide-vote');
+      thankYou.innerHTML = "Thank you for voting for " + nomineeName[i].innerHTML + "!";
 		} else {
 			card[i].classList.remove('border-focus');
       voteButton[i].classList.add('hide-vote');
