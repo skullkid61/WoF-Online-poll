@@ -58,6 +58,7 @@ img {
   color: #d6c184;
   line-height: 1.1;
   font-size: 23px;
+  z-index: -3;
 }
 
 @-webkit-keyframes button-glow {
@@ -262,11 +263,18 @@ input[type=submit],
 }
 
 @media screen and (min-width: 450px) {
-  .welcome-display img {
+  .welcome-display img,
+  .goodbye-display img {
     max-width: 60%;
+    z-index: -6;
   }
-  .welcome-display h1 {
+  .welcome-display h1,
+  .goodbye-display h1 {
     font-size: 40px;
+  }
+  .expand {
+    transform: scale(1.18);
+    transition: 10s;
   }
   .start-button {
     font-size: 36px;

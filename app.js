@@ -3,6 +3,7 @@ const card = document.querySelectorAll('.nominee-card');
 const voteButton = document.querySelectorAll('.single-vote');
 const welcomeDisplay = document.getElementsByClassName('welcome-display')[0];
 const goodbyeDisplay = document.getElementsByClassName('goodbye-display')[0];
+const goodbyeLogo = document.querySelector('.goodbye-display img');
 const startButton = document.getElementsByClassName('start-button')[0];
 const form = document.getElementById('form');
 const container = document.getElementsByClassName('container')[0];
@@ -31,6 +32,7 @@ form.addEventListener('submit', (e) => {
   setTimeout( () => { 
     container.classList.add('no-scroll');
   }, 2000);
+  goodbyeLogo.classList.add('expand');
   setTimeout( () => { 
     form.submit()
   }, 10000);
