@@ -237,7 +237,7 @@ h3 {
 }
 
 input[type=radio] {
-	/* display: none; */
+	display: none;
 }
 
 input[type=submit],
