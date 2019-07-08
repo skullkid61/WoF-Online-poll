@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
+		<title>Walk of Fame</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="font/style.css">
@@ -11,17 +11,22 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
+    <div class="welcome-display">
+      <img src="images/AFC-WoF-Title-Graphic.svg" alt="Walk of Fame Logo">
+      <h1>Vote for your 2018 Walk of Fame People's Choice Star</h1>
+      <button class="start-button">Start</button>
+    </div>
 		<div class="container">
 			<header>
-        <img class="main-logo" src="images/AFC-WoF-Title-Graphic-white.svg" alt="">
+        <img class="main-logo" src="images/AFC-WoF-Title-Graphic-white.svg" alt="Walk of Fame Logo">
         <div class="presenting-line">
           <p>The Walk of Fame is proudly supported by</p>
-          <img class="advertiser-logo" src="images/the-advertiser-white.png">
+          <img class="advertiser-logo" src="images/the-advertiser-white.png" alt="The Advertiser">
         </div>
       </header>
       
 			<form method="post">
-				<h1>Vote for your 2018 Walk of Fame People's Choice Star</h1>
+				<h1>Select your 2018 Walk of Fame People's Choice Star</h1>
 				<div id="nominees">
 
 					<div class="nominee-card">
@@ -35,7 +40,20 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-					<input type="radio" id="option1" value="option1" name="wof-nominee">
+          <input type="radio" id="anh-do" value="anh-do" name="wof-nominee">
+          
+          <div class="nominee-card">
+            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
+            <img class="nominee-image" src="images/judy-davis.jpg" alt="">
+            <div class="card-text">
+              <h2>Judy Davis</h2>
+              <h3>Director: <br/><em>Faith Healer</em></h3>
+            </div>
+            <div class="single-vote hide-vote">
+              <input type="submit" value="Vote Now">
+            </div>
+          </div>
+          <input type="radio" id="judy-davis" value="judy-davis" name="wof-nominee">  
 
 					<div class="nominee-card">
             <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
@@ -48,8 +66,21 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-					<input type="radio" id="option2" value="option2" name="wof-nominee">
-
+					<input type="radio" id="ben-folds" value="ben-folds" name="wof-nominee">
+          
+					<div class="nominee-card">
+            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
+						<img class="nominee-image" src="images/archie-roach.jpg" alt="">
+						<div class="card-text">
+							<h2>Archie Roach</h2>
+							<h3>Singer: <br/><em>Dancing With My Spirit</em></h3>
+            </div>
+            <div class="single-vote hide-vote">
+              <input type="submit" value="Vote Now">
+            </div>
+					</div>
+          <input type="radio" id="archie-roach" value="archie-roach" name="wof-nominee">
+          
 					<div class="nominee-card">
             <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
 						<img class="nominee-image" src="images/kimball-wong.jpg" alt="">
@@ -61,7 +92,7 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-					<input type="radio" id="option3" value="option3" name="wof-nominee">
+					<input type="radio" id="kimball-wong" value="kimball-wong" name="wof-nominee">
 
 					<div class="nominee-card">
             <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
@@ -74,7 +105,7 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-          <input type="radio" id="option4" value="option4" name="wof-nominee">
+          <input type="radio" id="benita-collings" value="benita-collings" name="wof-nominee">
           
           <div class="nominee-card">
             <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
@@ -87,7 +118,7 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-          <input type="radio" id="option5" value="option5" name="wof-nominee">
+          <input type="radio" id="nicholas-carter" value="nicholas-carter" name="wof-nominee">
           
           <div class="nominee-card">
             <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
@@ -100,7 +131,7 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-          <input type="radio" id="option6" value="option6" name="wof-nominee">
+          <input type="radio" id="kitty-flanagan" value="kitty-flanagan" name="wof-nominee">
           
           <div class="nominee-card">
             <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
@@ -113,59 +144,7 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-					<input type="radio" id="option7" value="option7" name="wof-nominee">
-
-					<div class="nominee-card">
-            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
-						<img class="nominee-image" src="images/tommy-emmanuel.jpg" alt="">
-						<div class="card-text">
-							<h2>Tommy Emmanuel</h2>
-							<h3>Musician: <br/><em>Tommy Emmanuel & Friends</em></h3>
-            </div>
-            <div class="single-vote hide-vote">
-              <input type="submit" value="Vote Now">
-            </div>
-					</div>
-					<input type="radio" id="option8" value="option2" name="wof-nominee">
-
-					<div class="nominee-card">
-            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
-						<img class="nominee-image" src="images/archie-roach.jpg" alt="">
-						<div class="card-text">
-							<h2>Archie Roach</h2>
-							<h3>Singer: <br/><em>Dancing With My Spirit</em></h3>
-            </div>
-            <div class="single-vote hide-vote">
-              <input type="submit" value="Vote Now">
-            </div>
-					</div>
-					<input type="radio" id="option9" value="option9" name="wof-nominee">
-
-					<div class="nominee-card">
-            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
-						<img class="nominee-image" src="images/stephen-page.jpg" alt="">
-						<div class="card-text">
-							<h2>Stephen Page </h2>
-							<h3>Choreographer/Artistic Director: <br/><em>Bennelong</em></h3>
-            </div>
-            <div class="single-vote hide-vote">
-              <input type="submit" value="Vote Now">
-            </div>
-					</div>
-          <input type="radio" id="option10" value="option10" name="wof-nominee">
-          
-          <div class="nominee-card">
-            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
-						<img class="nominee-image" src="images/judy-davis.jpg" alt="">
-						<div class="card-text">
-							<h2>Judy Davis</h2>
-							<h3>Director: <br/><em>Faith Healer</em></h3>
-            </div>
-            <div class="single-vote hide-vote">
-              <input type="submit" value="Vote Now">
-            </div>
-					</div>
-          <input type="radio" id="option11" value="option11" name="wof-nominee">
+          <input type="radio" id="mamma-mia" value="mamma-mia" name="wof-nominee">
           
           <div class="nominee-card">
             <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
@@ -178,10 +157,36 @@
               <input type="submit" value="Vote Now">
             </div>
 					</div>
-					<input type="radio" id="option12" value="option12" name="wof-nominee">
+					<input type="radio" id="patti-lupone" value="patti-lupone" name="wof-nominee">
+
+					<div class="nominee-card">
+            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
+						<img class="nominee-image" src="images/tommy-emmanuel.jpg" alt="">
+						<div class="card-text">
+							<h2>Tommy Emmanuel</h2>
+							<h3>Musician: <br/><em>Tommy Emmanuel & Friends</em></h3>
+            </div>
+            <div class="single-vote hide-vote">
+              <input type="submit" value="Vote Now">
+            </div>
+					</div>
+					<input type="radio" id="tommy-emmanuel" value="tommy-emmanuel" name="wof-nominee">
+
+					<div class="nominee-card">
+            <img class="wof-star" src="images/Walk-of-fame-star.svg" alt="">
+						<img class="nominee-image" src="images/stephen-page.jpg" alt="">
+						<div class="card-text">
+							<h2>Stephen Page </h2>
+							<h3>Choreographer/Artistic Director: <br/><em>Bennelong</em></h3>
+            </div>
+            <div class="single-vote hide-vote">
+              <input type="submit" value="Vote Now">
+            </div>
+					</div>
+          <input type="radio" id="stephen-page" value="stephen-page" name="wof-nominee">
+          
 
 				</div><!-- /nominees -->
-				<input type="submit" value="Vote Now" id="vote-now" class="hidden-button">
 			</form>
 			
 		</div><!-- /container -->
