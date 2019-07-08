@@ -14,7 +14,6 @@ document.addEventListener('click', (e) => {
       voteButton[i].classList.remove('hide-vote');
 		} else {
 			card[i].classList.remove('border-focus');
-      // hiddenRadio[i].checked = false;
       voteButton[i].classList.add('hide-vote');
 		}
 	}
@@ -29,5 +28,5 @@ form.addEventListener('submit', (e) => {
   goodbyeDisplay.classList.remove('hide-display');
   setTimeout( () => { 
     form.submit()
-  }, 8000);
+  }, 10000);
 });
