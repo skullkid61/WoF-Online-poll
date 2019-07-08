@@ -272,9 +272,13 @@ input[type=submit],
   .goodbye-display h1 {
     font-size: 40px;
   }
+  .goodbye-display img {
+    opacity: .6;
+  }
   .expand {
+    opacity: 1 !important;
     transform: scale(1.18);
-    transition: 10s;
+    transition: 10s ease-out;
   }
   .start-button {
     font-size: 36px;
