@@ -37,6 +37,6 @@ form.addEventListener('submit', (e) => {
   }, 2000);
   goodbyeLogo.classList.add('expand');
   setTimeout( () => { 
-    form.submit()
+    form.submit();
   }, 10000);
 });
