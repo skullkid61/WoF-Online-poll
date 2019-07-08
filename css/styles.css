@@ -21,6 +21,10 @@ body {
   overflow: hidden;
 }
 
+.no-scroll {
+  position: fixed;
+}
+
 img {
   max-width: 100%;
   display: block;

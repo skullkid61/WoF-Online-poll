@@ -5,6 +5,7 @@ const welcomeDisplay = document.getElementsByClassName('welcome-display')[0];
 const goodbyeDisplay = document.getElementsByClassName('goodbye-display')[0];
 const startButton = document.getElementsByClassName('start-button')[0];
 const form = document.getElementById('form');
+const container = document.getElementsByClassName('container')[0];
 
 document.addEventListener('click', (e) => {
 	for (i = 0; i < card.length; i++) {
@@ -21,11 +22,15 @@ document.addEventListener('click', (e) => {
 
 startButton.addEventListener('click', (e) => {
   welcomeDisplay.classList.add('hide-display');
+  container.classList.remove('no-scroll');
 });
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   goodbyeDisplay.classList.remove('hide-display');
+  setTimeout( () => { 
+    container.classList.add('no-scroll');
+  }, 2000);
   setTimeout( () => { 
     form.submit()
   }, 10000);
