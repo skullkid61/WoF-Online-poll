@@ -10,7 +10,7 @@ const container = document.getElementsByClassName('container')[0];
 const nomineeName = document.querySelectorAll('.card-text h2');
 const thankYou = document.querySelectorAll('.goodbye-display h1')[0];
 
-document.addEventListener('click', (e) => {
+document.addEventListener('click', function(e) {
 	for (i = 0; i < card.length; i++) {
 		if (e.target === card[i]) {
 			hiddenRadio[i].checked = true;
@@ -24,19 +24,19 @@ document.addEventListener('click', (e) => {
 	}
 });
 
-startButton.addEventListener('click', (e) => {
+startButton.addEventListener('click', function(e) {
   welcomeDisplay.classList.add('hide-display');
   container.classList.remove('no-scroll');
 });
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', function(e) {
   e.preventDefault();
   goodbyeDisplay.classList.remove('hide-display');
-  setTimeout( () => { 
+  setTimeout( function() { 
     container.classList.add('no-scroll');
   }, 2000);
   goodbyeLogo.classList.add('expand');
-  setTimeout( () => { 
+  setTimeout( function() { 
     form.submit();
   }, 10000);
 });

@@ -186,6 +186,7 @@ h3 {
   opacity: .9;
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .nominee-card img,
@@ -270,6 +271,7 @@ input[type=submit],
   text-transform: lowercase;
   font-family: 'Baron Neue', helvetica, sans-serif;
   font-size: 1.4em;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 450px) {
