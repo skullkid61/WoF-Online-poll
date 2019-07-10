@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+*::selection {
+  background: #d6c184;
+}
+
 .container {
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -271,6 +275,7 @@ input[type=submit],
   font-family: 'Baron Neue', helvetica, sans-serif;
   font-size: 1.4em;
   cursor: pointer;
+  outline-color: #d9b451;
 }
 
 .image-credits {
