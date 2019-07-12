@@ -210,6 +210,17 @@
     </div><!-- /container -->
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      axios.post('/api/wof', {
+        vote: document.querySelector('input[type=radio]:checked').value
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    </script>
 		<script src="app.js"></script>
 	</body>
 </html>
