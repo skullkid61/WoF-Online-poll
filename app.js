@@ -33,13 +33,37 @@
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    goodbyeDisplay.classList.remove('hide-display');
-    setTimeout(function () {
-      container.classList.add('no-scroll');
-    }, 2000);
-    goodbyeLogo.classList.add('expand');
-    setTimeout(function () {
-      form.submit();
-    }, 10000);
+
+    // **Version 1: Submit straight away and show error if unsuccessfull**
+    axios.post('/api/wof', {
+      vote: document.querySelector('input[type=radio]:checked').value
+    }).then(function(res) {
+      goodbyeDisplay.classList.remove('hide-display');
+      setTimeout(function () {
+        container.classList.add('no-scroll');
+      }, 2000);
+      goodbyeLogo.classList.add('expand');
+      setTimeout(Location.reload, 10000);
+    }).catch(function(err) { 
+      // advise the user of the error and don't show the thank you modal maybe?
+      console.log(err); 
+    });
+    // End version 1
+
+    // **Version 2: Delay submission to stop spamming**
+    // goodbyeDisplay.classList.remove('hide-display');
+    // setTimeout(function () {
+    //   container.classList.add('no-scroll');
+    // }, 2000);
+    // goodbyeLogo.classList.add('expand');
+    // setTimeout(function () {
+    //   axios.post('/api/wof’', {
+    //     vote: document.querySelector('input[type=radio]:checked').value
+    //   }).then(function(res) {
+    //   }).catch(function(err) { 
+    //     console.log(err); 
+    //   });
+    // }, 10000);
+    // End version 2
   });
 })();
