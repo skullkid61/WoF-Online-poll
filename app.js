@@ -45,12 +45,12 @@
       goodbyeLogo.classList.add('expand');
       setTimeout(Location.reload, 10000);
     }).catch(function(err) { 
-      // advise the user of the error and don't show the thank you modal maybe?
+      // advise the user of the error and don't show the thank you modal
       console.log(err); 
     });
-    // End version 1
+    // **End version 1
 
-    // **Version 2: Delay submission to stop spamming**
+    // **Version 2: Delay submission to stop spamming, but no error message**
     // goodbyeDisplay.classList.remove('hide-display');
     // setTimeout(function () {
     //   container.classList.add('no-scroll');
@@ -64,6 +64,6 @@
     //     console.log(err); 
     //   });
     // }, 10000);
-    // End version 2
+    // **End version 2
   });
 })();
